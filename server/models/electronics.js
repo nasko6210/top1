@@ -1,0 +1,29 @@
+module.exports=(sequelize,DataTypes)=>{
+    const ElectronicsTable=sequelize.define("ElectronicsTable",{
+        username:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        title:{
+         type:DataTypes.STRING,
+         allowNull:false
+        },
+       subCategory:{
+        type:DataTypes.STRING,
+        allowNull:false
+       },
+       description:{
+        type:DataTypes.STRING,
+        allowNull:false
+       },
+       price:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+       },
+       phoneNumber:{
+        type:DataTypes.INTEGER,
+        allowNull:true
+       }
+    })
+    return ElectronicsTable
+}
